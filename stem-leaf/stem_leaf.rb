@@ -1,5 +1,9 @@
 # Playing around with Ruby a bit
-# simple stem leaf plot 
+# Never really done anything with ruby, so this a first attempt 
+# at a simple stem=leaf plotter . T be much improved, i'm sure
+# as i pick up more ruby
+#
+# built w/ RUby 1.9.2
 class LeafStem
 
   attr_accessor :parsed_value_list
