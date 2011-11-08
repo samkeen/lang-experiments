@@ -1,0 +1,28 @@
+
+
+{
+  "name": "POC-Timeline",
+  "version": "1.0",
+  "description": "Add a simile timeline to an existing page",
+  "browser_action": {
+    "default_icon": "img/icon.png",
+	"popup": "popup.html"
+  },
+  "permissions": [
+    "http://api.flickr.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://en.wikipedia.org/*"]
+		// ,"css": ["mystyles.css"]
+		,"js": [
+                    "js/jquery-1.6.4.min.js",
+                    "js/core.js",
+//                    "js/timeline_2.3.0/timeline_ajax/scripts/signal.js",
+//                    "js/timeline_2.3.0/timeline_ajax/simile-ajax-api.js",
+//                    "js/timeline_2.3.0/timeline_js/timeline-api.js",
+                    "js/timeline_init.js"
+                ]
+    }
+  ]
+}
